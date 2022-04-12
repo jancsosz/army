@@ -16,7 +16,7 @@ public class Army {
             if (unit.getHealthPoints() < 25) {
                 this.armyList.remove(unit);
             }
-        };
+        }
     }
 
     public int getArmyDamage() {

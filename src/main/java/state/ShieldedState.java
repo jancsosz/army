@@ -1,7 +1,6 @@
 package state;
 
 import decorator.ShieldDecorator;
-import model.MilitaryUnitFunctionality;
 
 public class ShieldedState implements DefenceState {
     private ShieldDecorator militaryUnit;

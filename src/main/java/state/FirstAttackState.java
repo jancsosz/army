@@ -1,7 +1,6 @@
 package state;
 
 import decorator.FirstAttackDecorator;
-import model.MilitaryUnitFunctionality;
 
 public class FirstAttackState implements AttackState{
     private FirstAttackDecorator militaryUnit;
