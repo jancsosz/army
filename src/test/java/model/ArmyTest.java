@@ -8,9 +8,9 @@ import decorator.ArmedDecorator;
 
 public class ArmyTest extends TestCase {
 
-    MilitaryUnitFunctionality heavyCavalry;
-    MilitaryUnitFunctionality archer;
-    MilitaryUnitFunctionality swordsMan;
+    IMilitaryUnit heavyCavalry;
+    IMilitaryUnit archer;
+    IMilitaryUnit swordsMan;
 
     Army army;
 
@@ -89,7 +89,7 @@ public class ArmyTest extends TestCase {
     }
 
     public void testSwordsManShouldGetTotalDamageWhenUnarmedAndFirstAttackIsDone() {
-        MilitaryUnitFunctionality unarmedSwordsMan = new SwordsManFactory().createMilitaryUnit();
+        IMilitaryUnit unarmedSwordsMan = new SwordsManFactory().createMilitaryUnit();
 
         unarmedSwordsMan.sufferDamage(10);
         unarmedSwordsMan.sufferDamage(10);
