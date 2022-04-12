@@ -5,18 +5,6 @@ import model.MilitaryUnitFunctionality;
 abstract class AddonDecorator implements MilitaryUnitFunctionality {
     MilitaryUnitFunctionality militaryUnit;
 
-    /*@Override
-    public void setMilitaryUnitState(AttackState state) {
-
-    }
-
-    @Override
-    public void setMilitaryUnitState(DefenceState state) {
-
-    }*/
-
-
-
     public AddonDecorator(MilitaryUnitFunctionality militaryUnit) {
         this.militaryUnit = militaryUnit;
     }

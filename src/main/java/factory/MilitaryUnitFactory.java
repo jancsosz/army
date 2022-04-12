@@ -4,5 +4,5 @@ import model.MilitaryUnitFunctionality;
 
 interface MilitaryUnitFactory {
 
-    public MilitaryUnitFunctionality createMilitaryUnit();
+    MilitaryUnitFunctionality createMilitaryUnit();
 }

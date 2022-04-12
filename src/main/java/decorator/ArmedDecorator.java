@@ -8,7 +8,6 @@ public class ArmedDecorator extends AddonDecorator {
         super(militaryUnit);
     }
 
-
     @Override
     public void sufferDamage(int damage) {
         this.militaryUnit.sufferDamage(damage/2);
