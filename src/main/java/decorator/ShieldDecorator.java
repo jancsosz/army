@@ -1,6 +1,6 @@
 package decorator;
 
-import model.MilitaryUnitFunctionality;
+import model.IMilitaryUnit;
 import state.DefenceState;
 import state.ShieldedState;
 
@@ -8,7 +8,7 @@ public class ShieldDecorator extends AddonDecorator {
 
     private DefenceState state;
 
-    public ShieldDecorator(MilitaryUnitFunctionality militaryUnit) {
+    public ShieldDecorator(IMilitaryUnit militaryUnit) {
         super(militaryUnit);
         this.state = new ShieldedState(this);
     }

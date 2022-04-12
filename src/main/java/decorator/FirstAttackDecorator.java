@@ -1,6 +1,6 @@
 package decorator;
 
-import model.MilitaryUnitFunctionality;
+import model.IMilitaryUnit;
 import state.AttackState;
 import state.FirstAttackState;
 
@@ -8,7 +8,7 @@ public class FirstAttackDecorator extends AddonDecorator {
 
     private AttackState state;
 
-    public FirstAttackDecorator(MilitaryUnitFunctionality militaryUnit) {
+    public FirstAttackDecorator(IMilitaryUnit militaryUnit) {
         super(militaryUnit);
         this.state = new FirstAttackState(this);
     }

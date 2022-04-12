@@ -3,7 +3,7 @@ package model;
 import lombok.Data;
 
 @Data
-public class MilitaryUnit implements MilitaryUnitFunctionality {
+public class MilitaryUnit implements IMilitaryUnit {
 
     private int healthPoints;
     private int attackPower;

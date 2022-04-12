@@ -1,10 +1,10 @@
 package decorator;
 
-import model.MilitaryUnitFunctionality;
+import model.IMilitaryUnit;
 
 public class ArmedDecorator extends AddonDecorator {
 
-    public ArmedDecorator(MilitaryUnitFunctionality militaryUnit) {
+    public ArmedDecorator(IMilitaryUnit militaryUnit) {
         super(militaryUnit);
     }
 

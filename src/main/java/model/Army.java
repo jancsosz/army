@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Army {
-    private final List<MilitaryUnitFunctionality> armyList = new ArrayList<>();
+    private final List<IMilitaryUnit> armyList = new ArrayList<>();
 
-    public void addUnit(MilitaryUnitFunctionality militaryUnit) {
+    public void addUnit(IMilitaryUnit militaryUnit) {
         this.armyList.add(militaryUnit);
     }
 
     public void damageAll(int damage) {
-        for (MilitaryUnitFunctionality unit: this.armyList) {
+        for (IMilitaryUnit unit: this.armyList) {
             unit.sufferDamage(damage);
             if (unit.getHealthPoints() < 25) {
                 this.armyList.remove(unit);
@@ -21,7 +21,7 @@ public class Army {
 
     public int getArmyDamage() {
         return this.armyList.stream()
-                .mapToInt(MilitaryUnitFunctionality::doDamage)
+                .mapToInt(IMilitaryUnit::doDamage)
                 .sum();
     }
 

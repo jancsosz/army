@@ -1,6 +1,6 @@
 package model;
 
-public interface MilitaryUnitFunctionality {
+public interface IMilitaryUnit {
     void setHealthPoints(int healthPoints);
     int getAttackPower();
     int getHealthPoints();

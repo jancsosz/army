@@ -1,7 +1,7 @@
 package factory;
 
 import model.MilitaryUnit;
-import model.MilitaryUnitFunctionality;
+import model.IMilitaryUnit;
 
 public class ArcherFactory implements MilitaryUnitFactory{
 
@@ -9,7 +9,7 @@ public class ArcherFactory implements MilitaryUnitFactory{
     }
 
     @Override
-    public MilitaryUnitFunctionality createMilitaryUnit() {
+    public IMilitaryUnit createMilitaryUnit() {
         return new MilitaryUnit(50, 20);
     }
 }

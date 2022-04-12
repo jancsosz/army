@@ -1,11 +1,11 @@
 package decorator;
 
-import model.MilitaryUnitFunctionality;
+import model.IMilitaryUnit;
 
-abstract class AddonDecorator implements MilitaryUnitFunctionality {
-    MilitaryUnitFunctionality militaryUnit;
+abstract class AddonDecorator implements IMilitaryUnit {
+    IMilitaryUnit militaryUnit;
 
-    public AddonDecorator(MilitaryUnitFunctionality militaryUnit) {
+    public AddonDecorator(IMilitaryUnit militaryUnit) {
         this.militaryUnit = militaryUnit;
     }
 

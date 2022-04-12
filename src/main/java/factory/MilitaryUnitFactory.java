@@ -1,8 +1,8 @@
 package factory;
 
-import model.MilitaryUnitFunctionality;
+import model.IMilitaryUnit;
 
 interface MilitaryUnitFactory {
 
-    MilitaryUnitFunctionality createMilitaryUnit();
+    IMilitaryUnit createMilitaryUnit();
 }

@@ -2,7 +2,7 @@ package factory;
 
 import decorator.ShieldDecorator;
 import model.MilitaryUnit;
-import model.MilitaryUnitFunctionality;
+import model.IMilitaryUnit;
 
 public class SwordsManFactory implements MilitaryUnitFactory {
 
@@ -10,7 +10,7 @@ public class SwordsManFactory implements MilitaryUnitFactory {
     }
 
     @Override
-    public MilitaryUnitFunctionality createMilitaryUnit() {
+    public IMilitaryUnit createMilitaryUnit() {
         return new ShieldDecorator(new MilitaryUnit(100, 10));
     }
 }
